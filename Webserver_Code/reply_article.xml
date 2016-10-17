@@ -1,0 +1,24 @@
+$def with (toUser,fromUser,createTime,title,picurl,url)
+
+<!-- author:    Xiang xiyun -->
+<!-- date:      2014-11-28 -->
+<!-- describe:  This xml file is used to send article messaage to users. -->
+<!--            And the detail meaning please refer to the develop document of wechat -->
+
+
+<xml>
+<ToUserName><![CDATA[$toUser]]></ToUserName>
+<FromUserName><![CDATA[$fromUser]]></FromUserName>
+<CreateTime>$createTime</CreateTime>
+<MsgType><![CDATA[news]]></MsgType>
+<ArticleCount>1</ArticleCount>
+<Articles>
+<item>
+<Title><![CDATA[$title1]]></Title> 
+<Description><![CDATA[description1]]></Description>
+<PicUrl><![CDATA[picurl]]></PicUrl>
+<Url><![CDATA[url]]></Url>
+</item>
+</Articles>
+</xml> 
+

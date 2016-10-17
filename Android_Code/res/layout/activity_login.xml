@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_zh"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="10dip"
+            android:gravity="bottom"
+            android:text="帐号:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_zh"
+            android:layout_width="200dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/edit" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_mima"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="10dip"
+            android:gravity="bottom"
+            android:text="密码:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_mima"
+            android:layout_width="200dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/edit"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <CheckBox
+            android:id="@+id/cb_mima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_mima"
+            android:layout_marginLeft="12dip"
+            android:text="记住账号和密码" />
+
+        <CheckBox
+            android:id="@+id/cb_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cb_mima"
+            android:layout_marginLeft="12dip"
+            android:text="自动登录"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_login"
+        android:layout_alignBottom="@+id/btn_login"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/btn"
+        android:text="注册"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/btn"
+        android:text="登录"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+</RelativeLayout>
